@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-str = "The Zen of Python, by TimPeters"
+import this
+str = 
 print(str)
