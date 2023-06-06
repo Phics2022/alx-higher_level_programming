@@ -1,2 +1,2 @@
 #!/bin/bash
-phyton3 $PYFILE
+phyton3 -m $PYFILE
