@@ -4,7 +4,10 @@ number = random.randint(-10000, 10000)
 true_number = number
 if number < 0:
     true_number = number * -1
-last_digit = true_number % 10
+    last_digit = true_number % 10
+    last_digit = last_digit * -1
+else:
+    last_digit = true_number % 10
 if last_digit > 5:
     print(f"Last digit of {number} is {last_digit} and is greater than 5")
 elif last_digit == 0:
