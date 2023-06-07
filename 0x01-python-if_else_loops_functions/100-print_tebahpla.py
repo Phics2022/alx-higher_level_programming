@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-#print the alphatbet in reverse in this oder zYxW
-#loop int small letters
-#for every loop we want to change to Capital
+# print the alphatbet in reverse in this oder zYxW
+# loop int small letters
+# for every loop we want to change to Capital
 n = 0
 y = 0
 for i in range(122, 96, -1):
