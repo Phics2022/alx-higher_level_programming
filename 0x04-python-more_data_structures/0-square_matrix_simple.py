@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
     new_list = [[0] * len(row) for row in matrix]
     for i, rows in enumerate(matrix):
