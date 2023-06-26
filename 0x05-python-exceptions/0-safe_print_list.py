@@ -4,11 +4,10 @@ def safe_print_list(my_list=[], x=0):
     for y in range(x):
         try:
             z = my_list[y]
-        except:
+        except Exception:
             pass
         else:
             count += 1
-            print(f"{z}",end="")
+            print(f"{z}", end="")
     print()
     return count
-
