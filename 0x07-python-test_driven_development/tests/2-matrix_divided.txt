@@ -1,0 +1,53 @@
+#testing matrix division
+
+#import the function
+>>> matrix_divided = __import__("2-matrix_divided").matrix_divided
+
+#create a matrix
+>>> matrix = [
+...    [1, 2, 3],
+...    [4, 5, 6]
+...    ]
+
+#divide matrix by int
+>>> matrix_divided(matrix, 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+#print out the matrix
+>>> matrix
+[[1, 2, 3], [4, 5, 6]]
+
+#matrix is a regular list
+>>> matrix = [1, 2, 3]
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+ ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+#matrix is a string
+>>> matrix = "hello"
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+ ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+#matrix lenght are different
+>>> matrix = [[1, 2, 3], [1, 2]]
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+ ...
+TypeError: Each row of the matrix must have the same size
+
+#div is not an int or float
+>>> matrix = [[1, 2, 3], [1, 2, 3]]
+>>> matrix_divided(matrix, "wassup")
+Traceback (most recent call last):
+ ...
+TypeError: div must be a number
+
+#div is zero
+>>> matrix = [[1, 2, 3], [1, 2, 3]]
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+ ...
+ZeroDivisionError: division by zero
