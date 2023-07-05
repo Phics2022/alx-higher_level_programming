@@ -14,13 +14,13 @@
 >>> add_integer("hello", 2.5)
 Traceback (most recent call last):
  ...
-TypeError: a must be an integer or b must be an integer
+TypeError: a must be an integer
 
-#adding a bool and an int
->>> add_integer(True, 2)
+#adding float and string
+>>> add_integer(2.5, "39")
 Traceback (most recent call last):
  ...
-TypeError: a must be an integer or b must be an integer
+TypeError: b must be an integer
 
 #test only a given
 >>> add_integer(2)
