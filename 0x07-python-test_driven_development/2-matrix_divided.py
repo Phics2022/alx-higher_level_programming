@@ -22,6 +22,7 @@ def matrix_divided(matrix, div):
         raise TypeError(err_msg)
     if not all(isinstance(row, list) for row in matrix):
         raise TypeError(err_msg)
+    for row in matrix:
         if not all(isinstance(element, (int, float)) for element in row):
             raise TypeError(err_msg)
 
