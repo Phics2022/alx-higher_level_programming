@@ -25,3 +25,8 @@ TypeError: b must be an integer
 #test only a given
 >>> add_integer(2)
 100
+
+#nan floats
+>>> add_integer(float('nan'), 2)
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
