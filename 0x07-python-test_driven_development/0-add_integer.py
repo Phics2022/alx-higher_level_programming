@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module contains the add function"""
 
+
 def add_integer(a, b=98):
     """This function adds two integers
     Args:
