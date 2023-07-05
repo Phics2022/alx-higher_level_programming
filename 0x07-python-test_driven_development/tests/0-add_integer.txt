@@ -1,0 +1,27 @@
+#testint the add function
+#import the function
+>>> add_integer = __import__("0-add_integer").add_integer
+
+#adding two int
+>>> add_integer(2, 3)
+5
+
+#adding two floats
+>>> add_integer(2.3, 3.3)
+5
+
+#adding string and float
+>>> add_integer("hello", 2.5)
+Traceback (most recent call last):
+ ...
+TypeError: a must be an integer or b must be an integer
+
+#adding a bool and an int
+>>> add_integer(True, 2)
+Traceback (most recent call last):
+ ...
+TypeError: a must be an integer or b must be an integer
+
+#test only a given
+>>> add_integer(2)
+100
