@@ -23,4 +23,4 @@ def text_indentation(text):
         for char in ind:
             line = line.replace(char, char + "\n\n")
 
-        print(line)
+        print(line, end="")

@@ -3,7 +3,7 @@
 #import the module
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
-#text is feranmi. is good
+#text is a string
 >>> text_indentation("feranmi. is good")
 feranmi.
 <BLANKLINE>
