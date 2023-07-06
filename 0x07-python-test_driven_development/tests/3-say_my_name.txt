@@ -1,0 +1,24 @@
+# testing the task 3
+
+#import the module
+>>> say_my_name = __import__("3-say_my_name").say_my_name
+
+#both are string
+>>> say_my_name("Feranmi", "Oladipo")
+My name is Feranmi Oladipo
+
+#first name is an int
+>>> say_my_name(2, "Oladipo")
+Traceback (most recent call last):
+ ...
+TypeError: first_name must be a string
+
+#last name is an int
+>>> say_my_name("Feranmi", 2)
+Traceback (most recent call last):
+ ...
+TypeError: last_name must be a string
+
+#one parameter is not given
+>>> say_my_name("Feranmi")
+My name is Feranmi 
