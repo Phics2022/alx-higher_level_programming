@@ -65,5 +65,5 @@ class Rectangle:
         rec = ""
         for i in range(self.__height - 1):
             rec += "#" * self.__width + "\n"
-        rec += "#" *self.__width
+        rec += "#" * self.__width
         return rec
