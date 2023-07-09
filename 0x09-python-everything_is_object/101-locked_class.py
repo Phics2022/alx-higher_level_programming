@@ -1,4 +1,8 @@
 #!/usr/bin/python3
-class LockedClass:
-    __slots__ = ('first_name',)
+""" creates a locked class """
 
+
+class LockedClass:
+    """ creates a locked class with only first name
+    allowed """
+    __slots__ = ('first_name',)
