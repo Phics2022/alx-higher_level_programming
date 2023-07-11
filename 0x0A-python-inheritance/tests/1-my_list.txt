@@ -1,6 +1,6 @@
 # testing the function
 
-# importing the module
+# the module
 >>> MyList = __import__('1-my_list').MyList
 
 #testing the function
