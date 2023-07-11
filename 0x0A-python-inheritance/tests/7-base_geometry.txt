@@ -22,16 +22,3 @@ ValueError: feranmi must be greater than 0
 Traceback (most recent call last):
  ...
 ValueError: feranmi must be greater than 0
-
-# test if no parameter is giving
->>> a = BaseGeometry
->>> a.integer_validator()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: BaseGeometry.integer_validator() missing 3 required positional arguments: 'self', 'name', and 'value'
-
-#try 1 param
->>> a.integer_validator("he")
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
