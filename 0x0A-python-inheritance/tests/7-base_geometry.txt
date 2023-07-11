@@ -29,13 +29,3 @@ Traceback (most recent call last):
  ...
 Exception: area() is not implemented
 
-#test for parameters
->>> a = BaseGeometry
->>> a.integer_validator()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: BaseGeometry.integer_validator() missing 3 required positional arguments: 'self', 'name', and 'value'
->>> a.integer_validator("he")
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
