@@ -11,5 +11,5 @@ def lookup(obj):
     A list of the objects and attributes
     """
     attr = dir(obj)
-    lister = [i for i in obj]
+    lister = [i for i in attr]
     return lister
