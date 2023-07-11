@@ -1,0 +1,24 @@
+#importing the function
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+#test if value is an int
+>>> obj = BaseGeometry()
+>>> obj.integer_validator("feranmi", 17)
+
+#test if value is not an int
+>>> obj.integer_validator("feranmi", "oladipo")
+Traceback (most recent call last):
+ ...
+TypeError: feranmi must be an integer
+
+# test if value is < 0
+>>> obj.integer_validator("feranmi", -1)
+Traceback (most recent call last):
+ ...
+ValueError: feranmi must be greater than 0
+
+# test if value is 0
+>>> obj.integer_validator("feranmi", 0)
+Traceback (most recent call last):
+ ...
+ValueError: feranmi must be greater than 0
