@@ -10,5 +10,5 @@ def from_json_string(my_str):
     Args:
     my_str
     """
-    x = json.loads(my_str);
+    x = json.loads(my_str)
     return x
