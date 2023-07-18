@@ -4,6 +4,7 @@
 
 from models.base import Base
 
+
 class Rectangle(Base):
     """ creates a rectangle object
     and it inherits from Base class
