@@ -17,5 +17,12 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(rec.width, 10)
         self.assertEqual(rec.height, 2)
 
+    def test_assign_errors(self):
+        self.assertRaises(TypeError, Rectangle, "feranmi", "sharon")
+        self.assertRaises(ValueError, Rectangle, 0, 3)
+        self.assertRaises(ValueError, Rectangle, 3, 0)
+        self.assertRaises(ValueError, Rectangle, 2, 3, -1, 3)
+        self.assertRaises(ValueError, Rectangle,  -2, 0)
+
 if __name__ == "__main__":
     unittest.main()
