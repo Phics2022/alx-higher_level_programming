@@ -34,6 +34,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
+        self.__id = id
 
     @property
     def width(self):
@@ -98,3 +99,8 @@ class Rectangle(Base):
             for col in range(self.width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """overrites the str prop"""
+        string = "[Rectangle] ({}) {}/{} - {}/{}"
+        return string.format(self.id, self.x, self.y, self.width, self.height)
