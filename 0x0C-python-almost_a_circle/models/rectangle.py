@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """ creates a rectangle class"""
 
+
 from base import Base
+
 
 class Rectangle(Base):
     """ creates a rectangle object
@@ -9,6 +11,7 @@ class Rectangle(Base):
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """ initailises the class"""
         super().__init__(id)
         self.__width = width
         self.__height = height
