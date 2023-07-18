@@ -98,8 +98,8 @@ class Rectangle(Base):
         for a in range(self.y):
             print()
         for row in range(self.height):
+            print(" " * self.x, end="")
             for col in range(self.width):
-                print(" " * self.x, end="")
                 print("#", end="")
             print()
 
