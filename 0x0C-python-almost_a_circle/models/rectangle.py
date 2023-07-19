@@ -111,7 +111,7 @@ class Rectangle(Base):
     def update(self, *args):
         """ updates the values"""
         if len(args) > 0:
-            attrs = ["id", "width", "height", "x", "y"]
+            attrs = ["__id", "__width", "__height", "__x", "__y"]
             for i, value in enumerate(args):
                 if i < len(attrs):
                     setattr(self, attrs[i], value)
