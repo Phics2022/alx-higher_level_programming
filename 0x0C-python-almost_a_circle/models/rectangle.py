@@ -108,7 +108,7 @@ class Rectangle(Base):
         string = "[Rectangle] ({}) {}/{} - {}/{}"
         return string.format(self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ updates the values"""
         if len(args) > 0:
             attrs = ["__id", "__width", "__height", "__x", "__y"]
@@ -117,4 +117,4 @@ class Rectangle(Base):
                     setattr(self, attrs[i], value)
         else:
             for key, value in kwargs.items():
-                setattr(self, key, value)
+                setattr(self, "__"+key, value)
