@@ -22,7 +22,7 @@ class Base:
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         else:
-            return json.dumps(list_dictionaries)
+            return json.dumps([obj.to_dictionary() for obj in list_dictionaries])
 
 
     @classmethod
@@ -30,8 +30,6 @@ class Base:
         """ writes the JSON string 
         representation of list_objs to a file
         """
-
-
         if list_objs is None:
             list_objs = []
         filename = f"{cls.__name__}.json"
