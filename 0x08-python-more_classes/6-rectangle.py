@@ -5,6 +5,7 @@
 class Rectangle():
     """ This is a rectangle class"""
     number_of_instances = 0
+
     def __init__(self, width=0, height=0):
         """ This initialises an instance"""
         if not isinstance(width, int):
@@ -47,7 +48,6 @@ class Rectangle():
             raise ValueError("height must be >= 0")
         else:
             self.__height = value
-
 
     def area(self):
         """ This returns the rectangle area"""
