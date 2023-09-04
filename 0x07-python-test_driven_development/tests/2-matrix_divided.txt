@@ -1,0 +1,35 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+>>> matrix = [
+... [1, 2, 3],
+... [4, 5, 6]
+... ]
+>>> # testing matrix and true number
+>>> print(matrix_divided(matrix, 3))
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+>>> #testing matrix and negative number
+>>> print(matrix_divided(matrix, -1))
+[[-1.0, -2.0, -3.0], [-4.0, -5.0, -6.0]]
+>>> #testing div is zero
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+ ...
+ZeroDivisionError: division by zero
+>>> #testing matrix is not a matrix
+>>> matrix_divided("feranmi", 1)
+Traceback (most recent call last):
+ ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> #testing matrix rows are unequal
+>>> matrix_divided([[1, 2, 3], [1, 2]], 2)
+Traceback (most recent call last):
+ ...
+TypeError: Each row of the matrix must have the same size
+>>> #testing div is not an integer or float
+>>> matrix_divided(matrix, "feranmi")
+Traceback (most recent call last):
+ ...
+TypeError: div must be a number
+>>> matrix_divided([1, 2, 3], 1)
+Traceback (most recent call last):
+ ...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
