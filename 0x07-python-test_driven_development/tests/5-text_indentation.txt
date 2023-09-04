@@ -1,0 +1,13 @@
+>>> #testing text indentation
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+>>> #testing with string
+>>> text = "Feranmi is cool. isn't he"
+>>> text_indentation(text)
+Feranmi is cool.
+<BLANKLINE>
+isn't he
+>>> #testing none string
+>>> text_indentation(2)
+Traceback (most recent call last):
+ ...
+TypeError: text must be a string
