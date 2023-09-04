@@ -54,4 +54,4 @@ class Rectangle():
         """ This returns the rectangle area"""
         if self.width == 0 and self.height == 0:
             return 0
-        return 2 * (self__height + self.__height)
+        return 2 * (self.__width + self.__height)
