@@ -1,0 +1,17 @@
+>>> #testing say my name
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+>>> #testing all strings
+>>> say_my_name("Feranmi", "Oladipo")
+My name is Feranmi Oladipo
+>>> #testing one argument
+>>> say_my_name("Feranmi")
+My name is Feranmi 
+>>> #testing none string
+>>> say_my_name(23, "Oladipo")
+Traceback (most recent call last):
+ ...
+TypeError: first_name must be a string
+>>> say_my_name("Feranmi", 23)
+Traceback (most recent call last):
+ ...
+TypeError: last_name must be a string
