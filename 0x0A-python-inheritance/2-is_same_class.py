@@ -19,4 +19,4 @@ def is_same_class(obj, a_class):
     False(Bool): if obj is not an instance of a_class
     """
 
-        return type(obj) == a_class
+    return type(obj) == a_class
