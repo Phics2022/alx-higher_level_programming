@@ -21,4 +21,4 @@ def class_to_json(obj):
                 serialised[key] = value
             elif isinstance(value, object):
                 serialised[key] = class_to_json(value)
-        return serialised_
+        return serialised
