@@ -7,5 +7,5 @@ def load_from_json_file(filename):
     """ create abject from `filename`"""
 
     with open(filename, "r", encoding="utf-8") as file:
-        buff = json.load(filaname)
+        buff = json.load(file)
     return buff
