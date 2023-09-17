@@ -90,3 +90,9 @@ class Rectangle(Base):
         """ displays the rectangle in `#`"""
         for i in range(self.__height):
             print("#" * self.__width)
+
+    def __str__(self):
+        """ print the instance"""
+        print_out = "[Rectangle] ({}) {}/{} - {}/{}"
+        x = self.__x
+        return print_out.format(self.id, x, self.y, self.width, self.height)
