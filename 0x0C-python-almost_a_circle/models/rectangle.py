@@ -92,7 +92,9 @@ class Rectangle(Base):
 
     def display(self):
         """ displays the rectangle in `#`"""
+        print("\n" * self.__y, end="")
         for i in range(self.__height):
+            print(" " * self.__x, end="")
             print("#" * self.__width)
 
     def __str__(self):
