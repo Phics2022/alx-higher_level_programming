@@ -17,6 +17,7 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """ list to json"""
 
@@ -31,3 +32,11 @@ class Base:
         with open(file_name, "w", encoding="utf-8") as file:
             json_rep = cls.to_json_string(list_objs)
             file.write(json_rep)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ from json rep to string"""
+
+        if json_string is None:
+            return ""
+        return json.loads(json_string)
