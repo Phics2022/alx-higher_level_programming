@@ -143,6 +143,6 @@ class Rectangle(Base):
 
         h = self.__height
         w = self.__width
-        idw = self.__id
+        idw = self.id
         dic = {'x': self.x, 'y': self.y, 'id': idw, 'height': h, 'width': w}
         return dic
